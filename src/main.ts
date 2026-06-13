@@ -7,6 +7,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3001',
       'https://el-tequendama.vercel.app',
+      'https://el-tequendama-web.vercel.app',
     ],
   });
   await app.listen(process.env.PORT ?? 3000);
