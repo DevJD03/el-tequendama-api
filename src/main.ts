@@ -5,8 +5,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     origin: [
-      'http://localhost:3001',
-      'https://el-tequendama-web.vercel.app',
+    'http://localhost:3000',
+    'https://el-tequendama-web-git-main-devjd03s-projects.vercel.app',
+    'https://eltequendama.co',,
     ],
   });
   await app.listen(process.env.PORT ?? 3000);
