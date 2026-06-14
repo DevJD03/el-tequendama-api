@@ -1,6 +1,8 @@
-import { Controller, Post, Body, HttpCode } from '@nestjs/common';
+import { Controller, Post, Body, HttpCode, UseGuards} from '@nestjs/common';
 import { SuscriptoresService } from './suscriptores.service';
 import { ApiKeyGuard } from '../auth/api-key.guard';
+
+
 
 @Controller('suscriptores')
 export class SuscriptoresController {
